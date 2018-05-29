@@ -28,6 +28,7 @@ class TopicController: UIViewController, UITableViewDataSource, UITableViewDeleg
 
 
     override func viewDidLoad() {
+        self.navigationController?.navigationBar.isHidden = false
         navigationItem.leftBarButtonItem = navigationController?.viewControllers.count == 1 ? splitViewController?.displayModeButtonItem : nil
         navigationItem.leftItemsSupplementBackButton = true
         navigationItem.rightBarButtonItems = [

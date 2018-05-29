@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0E06632320BDA6D80087F81F /* NavCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E06632120BDA6D80087F81F /* NavCell.swift */; };
+		0E06632420BDA6D80087F81F /* NavCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0E06632220BDA6D80087F81F /* NavCell.xib */; };
+		0EC14E3E20BAB13900161698 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EC14E3C20BAB13900161698 /* SearchViewController.swift */; };
+		0EC14E3F20BAB13900161698 /* SearchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0EC14E3D20BAB13900161698 /* SearchViewController.xib */; };
+		0EC14E4220BAFB6700161698 /* NavEditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EC14E4020BAFB6700161698 /* NavEditViewController.swift */; };
+		0EC14E4320BAFB6700161698 /* NavEditViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0EC14E4120BAFB6700161698 /* NavEditViewController.xib */; };
+		0EC14E4620BAFD4600161698 /* NodeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EC14E4420BAFD4600161698 /* NodeCell.swift */; };
+		0EC14E4720BAFD4600161698 /* NodeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0EC14E4520BAFD4600161698 /* NodeCell.xib */; };
+		0EDE36F420BC269300B3C27E /* NodeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EDE36F320BC269300B3C27E /* NodeModel.swift */; };
 		B21B37C41E0443AA00DD4FF3 /* JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = B21B37C31E0443AA00DD4FF3 /* JSON.swift */; };
 		B22DE0DF1B1951B200888C0D /* ComposeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B22DE0DE1B1951B200888C0D /* ComposeController.swift */; };
 		B24128AC1B2D3FDC0006AEF9 /* DateTools.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B24128AB1B2D3FDC0006AEF9 /* DateTools.bundle */; };
@@ -45,6 +54,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0E06632120BDA6D80087F81F /* NavCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavCell.swift; sourceTree = "<group>"; };
+		0E06632220BDA6D80087F81F /* NavCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NavCell.xib; sourceTree = "<group>"; };
+		0EC14E3C20BAB13900161698 /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		0EC14E3D20BAB13900161698 /* SearchViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SearchViewController.xib; sourceTree = "<group>"; };
+		0EC14E4020BAFB6700161698 /* NavEditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavEditViewController.swift; sourceTree = "<group>"; };
+		0EC14E4120BAFB6700161698 /* NavEditViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NavEditViewController.xib; sourceTree = "<group>"; };
+		0EC14E4420BAFD4600161698 /* NodeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NodeCell.swift; sourceTree = "<group>"; };
+		0EC14E4520BAFD4600161698 /* NodeCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NodeCell.xib; sourceTree = "<group>"; };
+		0EDE36F320BC269300B3C27E /* NodeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NodeModel.swift; sourceTree = "<group>"; };
 		66F00C90339BFEFF2988116C /* Pods-RubyChina.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RubyChina.release.xcconfig"; path = "Pods/Target Support Files/Pods-RubyChina/Pods-RubyChina.release.xcconfig"; sourceTree = "<group>"; };
 		9D16BBFE6D5CF11FD5D5AEFA /* Pods-RubyChina.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RubyChina.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RubyChina/Pods-RubyChina.debug.xcconfig"; sourceTree = "<group>"; };
 		B21B37C31E0443AA00DD4FF3 /* JSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSON.swift; sourceTree = "<group>"; };
@@ -171,6 +189,8 @@
 		B2D221F11B0F3EC200007E79 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				0EC14E3C20BAB13900161698 /* SearchViewController.swift */,
+				0EC14E3D20BAB13900161698 /* SearchViewController.xib */,
 				B22DE0DE1B1951B200888C0D /* ComposeController.swift */,
 				B2F2180A1B18B55600150DDF /* NodesController.swift */,
 				B2F2180B1B18B55600150DDF /* SignInController.swift */,
@@ -180,6 +200,13 @@
 				B2FBE70D1D5D8C5700E5DDE8 /* UIViewController.swift */,
 				B2F2180E1B18B55600150DDF /* UserController.swift */,
 				B2F2180F1B18B55600150DDF /* WebViewController.swift */,
+				0EC14E4020BAFB6700161698 /* NavEditViewController.swift */,
+				0EC14E4120BAFB6700161698 /* NavEditViewController.xib */,
+				0EC14E4420BAFD4600161698 /* NodeCell.swift */,
+				0EC14E4520BAFD4600161698 /* NodeCell.xib */,
+				0EDE36F320BC269300B3C27E /* NodeModel.swift */,
+				0E06632120BDA6D80087F81F /* NavCell.swift */,
+				0E06632220BDA6D80087F81F /* NavCell.xib */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -306,8 +333,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0EC14E4320BAFB6700161698 /* NavEditViewController.xib in Resources */,
 				B2D221D71B0B63A100007E79 /* Images.xcassets in Resources */,
 				B24128AC1B2D3FDC0006AEF9 /* DateTools.bundle in Resources */,
+				0EC14E3F20BAB13900161698 /* SearchViewController.xib in Resources */,
+				0EC14E4720BAFD4600161698 /* NodeCell.xib in Resources */,
+				0E06632420BDA6D80087F81F /* NavCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -327,13 +358,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RubyChina-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		B281D6B51AAEDB8CEE3F4960 /* [CP] Embed Pods Frameworks */ = {
@@ -342,9 +376,36 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-RubyChina/Pods-RubyChina-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/CCBottomRefreshControl/CCBottomRefreshControl.framework",
+				"${BUILT_PRODUCTS_DIR}/DateTools/DateTools.framework",
+				"${BUILT_PRODUCTS_DIR}/JTSImageViewController/JTSImageViewController.framework",
+				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/MGSwipeTableCell/MGSwipeTableCell.framework",
+				"${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework",
+				"${BUILT_PRODUCTS_DIR}/RegExCategories/RegExCategories.framework",
+				"${BUILT_PRODUCTS_DIR}/SZTextView/SZTextView.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+				"${BUILT_PRODUCTS_DIR}/TPKeyboardAvoiding/TPKeyboardAvoiding.framework",
+				"${BUILT_PRODUCTS_DIR}/UINavigationBar+Addition/UINavigationBar_Addition.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CCBottomRefreshControl.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DateTools.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JTSImageViewController.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MGSwipeTableCell.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Masonry.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RegExCategories.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SZTextView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TPKeyboardAvoiding.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/UINavigationBar_Addition.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -378,20 +439,25 @@
 				B2F218141B18B55600150DDF /* UserController.swift in Sources */,
 				B2F218091B18B54000150DDF /* EmptyView.swift in Sources */,
 				B2F218111B18B55600150DDF /* SignInController.swift in Sources */,
+				0EC14E4220BAFB6700161698 /* NavEditViewController.swift in Sources */,
 				B2F218061B18B54000150DDF /* TopicCell.swift in Sources */,
 				B2F218121B18B55600150DDF /* TopicController.swift in Sources */,
 				B263B52A1B1EA36C00C56CB0 /* TopicBodyCell.swift in Sources */,
 				B2D221D01B0B63A100007E79 /* AppDelegate.swift in Sources */,
 				B2F218101B18B55600150DDF /* NodesController.swift in Sources */,
 				B2F218131B18B55600150DDF /* TopicsController.swift in Sources */,
+				0EC14E4620BAFD4600161698 /* NodeCell.swift in Sources */,
 				B2F218031B18B54000150DDF /* ReplyCell.swift in Sources */,
+				0EC14E3E20BAB13900161698 /* SearchViewController.swift in Sources */,
 				B2F218151B18B55600150DDF /* WebViewController.swift in Sources */,
 				B2F218041B18B54000150DDF /* TopicTitleCell.swift in Sources */,
 				B2FBE70E1D5D8C5700E5DDE8 /* UIViewController.swift in Sources */,
 				B21B37C41E0443AA00DD4FF3 /* JSON.swift in Sources */,
 				B263B52E1B205B0B00C56CB0 /* SplitViewController.swift in Sources */,
 				B22DE0DF1B1951B200888C0D /* ComposeController.swift in Sources */,
+				0E06632320BDA6D80087F81F /* NavCell.swift in Sources */,
 				B2F217FB1B18B53600150DDF /* Helper.swift in Sources */,
+				0EDE36F420BC269300B3C27E /* NodeModel.swift in Sources */,
 				B2F218051B18B54000150DDF /* UserNameCell.swift in Sources */,
 				B2F218071B18B54000150DDF /* LoadingView.swift in Sources */,
 			);

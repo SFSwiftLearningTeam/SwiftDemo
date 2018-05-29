@@ -11,7 +11,18 @@ import UIKit
 class SplitViewController: UISplitViewController, UISplitViewControllerDelegate {
 
     override func loadView() {
-        addChildViewController(UINavigationController(rootViewController: TopicsController()))
+        let tabVC = UITabBarController()
+        let vc1 = UINavigationController(rootViewController: TopicsController())
+        let barItem1 = UITabBarItem(title: "列表", image: UIImage(named: "form"), selectedImage: UIImage(named: "form"))
+        vc1.tabBarItem = barItem1
+        let vc2 = UINavigationController(rootViewController: UIViewController())
+        let barItem2 = UITabBarItem(title: "操作", image: UIImage(named: "operation"), selectedImage: UIImage(named: "operation"))
+        vc2.tabBarItem = barItem2
+        let vc3 = UINavigationController(rootViewController: UIViewController())
+        let barItem3 = UITabBarItem(title: "我", image: UIImage(named: "account"), selectedImage: UIImage(named: "account"))
+        vc3.tabBarItem = barItem3
+        tabVC.viewControllers = [vc1,vc2,vc3]
+        addChildViewController(tabVC)
         addChildViewController(UIViewController())
         super.loadView()
     }
