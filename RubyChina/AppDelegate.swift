@@ -8,6 +8,7 @@
 
 import AFNetworking
 import UIKit
+import SQLite
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -29,7 +30,38 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window?.rootViewController = SplitViewController()
         window?.tintColor = Helper.tintColor
         window?.makeKeyAndVisible()
-
+        
+        //创建数据库
+        let paths = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)
+        let documentDir = paths[0]
+        
+        let db = try? Connection(documentDir + "/db.sqlite3")
+        
+        //已读数据表
+        let readRecords = Table("readRecords")
+        let id = Expression<Int64>("id")
+        let title = Expression<String?>("title")
+        let node_name = Expression<String?>("node_name")
+        let replies_count = Expression<Int64?>("replies_count")
+        let replied_at = Expression<String?>("replied_at")
+        let login = Expression<String?>("login")
+        if(db != nil){
+            do{
+                try db!.run(readRecords.create { t in
+                    t.column(id, primaryKey: true)
+                    t.column(title)
+                    t.column(node_name)
+                    t.column(replies_count)
+                    t.column(replied_at)
+                    t.column(login)
+                })
+            }catch{
+                print(error)
+            }
+        }
+        //
+        
+        
         return true
     }
 
