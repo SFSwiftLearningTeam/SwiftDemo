@@ -93,6 +93,13 @@ class MeViewController: UIViewController, UITableViewDelegate, UITableViewDataSo
         }
     }
     
+    @IBAction func loginAction(_ sender: Any) {
+        if Defaults.userId == nil {
+            let vc = SignInController()
+            self.navigationController?.pushViewController(vc, animated: true)
+        }
+    }
+    
     @IBAction func logoutActiopn(_ sender: Any) {
         let alertController = UIAlertController(title: "确定注销吗？", message: "注销后可以重新登录。", preferredStyle: .alert)
         alertController.addAction(UIAlertAction(title: "取消", style: .cancel, handler: nil))

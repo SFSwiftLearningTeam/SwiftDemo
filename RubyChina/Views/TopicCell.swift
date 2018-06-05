@@ -30,6 +30,7 @@ class TopicCell: UITableViewCell {
         tagLabel.textAlignment = .center
         tagLabel.layer.cornerRadius = 2
         tagLabel.layer.masksToBounds = true
+        tagLabel.font = UIFont.systemFont(ofSize: 14)
     }
 
     required init?(coder aDecoder: NSCoder) {
@@ -42,7 +43,7 @@ class TopicCell: UITableViewCell {
         textLabel?.frame.origin.y = 11.5
         textLabel?.text = topic["title"].string
         textLabel?.frame.size.height = textLabel!.textRect(forBounds: textLabel!.frame, limitedToNumberOfLines: 3).height
-        tagLabel.frame = CGRect(x:SCREEN_WIDTH-45, y:10, width:40, height:18)
+        tagLabel.frame = CGRect(x:SCREEN_WIDTH-40, y:10, width:40, height:18)
         
         detailTextLabel?.frame.origin.y = 11.5 + textLabel!.frame.height + 5
         detailTextLabel?.text = "[\(topic["node_name"])] · \(topic["user"]["login"]) · \(Helper.timeAgoSinceNow(topic["replied_at"].string ?? topic["created_at"].string))\(topic["replies_count"].intValue > 0 ? " · \(topic["replies_count"]) ↵" : "")"

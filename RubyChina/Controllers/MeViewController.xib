@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -26,7 +26,7 @@
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hiY-tT-VFa">
                     <rect key="frame" x="0.0" y="100" width="375" height="60"/>
                     <subviews>
-                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="1ev-iQ-Znp">
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="UserIcon" translatesAutoresizingMaskIntoConstraints="NO" id="1ev-iQ-Znp">
                             <rect key="frame" x="15" y="10" width="40" height="40"/>
                             <constraints>
                                 <constraint firstAttribute="width" constant="40" id="ADW-zL-epR"/>
@@ -75,6 +75,9 @@
                         <constraint firstItem="35S-Bs-I0F" firstAttribute="trailing" secondItem="Vn5-hk-aEk" secondAttribute="trailing" id="oKj-o4-Kye"/>
                         <constraint firstAttribute="height" constant="60" id="zeB-ea-UlU"/>
                     </constraints>
+                    <connections>
+                        <outletCollection property="gestureRecognizers" destination="SBM-71-7I5" appends="YES" id="VDS-tH-Zu3"/>
+                    </connections>
                 </view>
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="175-uo-cKw">
                     <rect key="frame" x="0.0" y="190" width="375" height="176"/>
@@ -127,5 +130,13 @@
                 <action selector="logoutActiopn:" destination="-1" id="Faw-hY-Wia"/>
             </connections>
         </tapGestureRecognizer>
+        <tapGestureRecognizer id="SBM-71-7I5" userLabel="Tap Gesture Recognizer1">
+            <connections>
+                <action selector="loginAction:" destination="-1" id="9hJ-4Y-2e6"/>
+            </connections>
+        </tapGestureRecognizer>
     </objects>
+    <resources>
+        <image name="UserIcon" width="25" height="25"/>
+    </resources>
 </document>
