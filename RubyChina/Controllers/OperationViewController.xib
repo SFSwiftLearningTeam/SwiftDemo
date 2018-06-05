@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="OperationViewController" customModule="RubyChina" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WKf-uZ-yrV">
+                    <rect key="frame" x="0.0" y="100" width="375" height="60"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="发帖" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="clC-I5-4ow">
+                            <rect key="frame" x="15" y="20" width="35" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="BNT-IU-mV4">
+                            <rect key="frame" x="345" y="15" width="15" height="30"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="30" id="APu-l2-ecm"/>
+                                <constraint firstAttribute="width" constant="15" id="PqC-fC-X3P"/>
+                            </constraints>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="BNT-IU-mV4" secondAttribute="trailing" constant="15" id="4bt-Di-zoi"/>
+                        <constraint firstAttribute="height" constant="60" id="H3X-Lx-nNV"/>
+                        <constraint firstItem="clC-I5-4ow" firstAttribute="centerY" secondItem="WKf-uZ-yrV" secondAttribute="centerY" id="il8-OY-P2U"/>
+                        <constraint firstItem="BNT-IU-mV4" firstAttribute="centerY" secondItem="WKf-uZ-yrV" secondAttribute="centerY" id="mcv-4T-jsJ"/>
+                        <constraint firstItem="clC-I5-4ow" firstAttribute="leading" secondItem="WKf-uZ-yrV" secondAttribute="leading" constant="15" id="tTM-1S-Msi"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.86666666670000003" green="0.87450980389999999" blue="0.87450980389999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="WKf-uZ-yrV" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="06W-n8-B3y"/>
+                <constraint firstItem="WKf-uZ-yrV" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="100" id="Qtl-c4-NPy"/>
+                <constraint firstAttribute="trailing" secondItem="WKf-uZ-yrV" secondAttribute="trailing" id="q6P-wB-NQp"/>
+            </constraints>
+            <connections>
+                <outletCollection property="gestureRecognizers" destination="6pv-95-wGb" appends="YES" id="kNr-xC-l0F"/>
+            </connections>
+        </view>
+        <tapGestureRecognizer id="6pv-95-wGb">
+            <connections>
+                <action selector="tapAction:" destination="-1" id="41z-oa-dQk"/>
+            </connections>
+        </tapGestureRecognizer>
+    </objects>
+</document>

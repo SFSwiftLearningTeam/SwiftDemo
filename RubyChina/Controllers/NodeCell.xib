@@ -28,6 +28,7 @@
                     </view>
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="dcr-qg-nFu">
                         <rect key="frame" x="102" y="0.0" width="16" height="16"/>
+                        <color key="backgroundColor" red="0.83027040159999999" green="0.1132633092" blue="0.05670543125" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="16" id="b4n-Bi-Fga"/>
                             <constraint firstAttribute="width" constant="16" id="ikL-va-J6B"/>

@@ -4,6 +4,7 @@ use_frameworks!
 
 target :RubyChina do
     pod 'AFNetworking'
+    pod 'Alamofire'
     pod 'CCBottomRefreshControl'
     pod 'DateTools'
     pod 'GoogleAnalytics'
@@ -15,4 +16,6 @@ target :RubyChina do
     pod 'SZTextView'
     pod 'TPKeyboardAvoiding'
     pod 'UINavigationBar+Addition'
+    pod 'SQLite.swift'
+    pod 'ActiveSQLite'
 end

@@ -9,6 +9,12 @@
 /* Begin PBXBuildFile section */
 		0E06632320BDA6D80087F81F /* NavCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E06632120BDA6D80087F81F /* NavCell.swift */; };
 		0E06632420BDA6D80087F81F /* NavCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0E06632220BDA6D80087F81F /* NavCell.xib */; };
+		0E4B03A520BF023900022AA0 /* MeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4B03A320BF023900022AA0 /* MeViewController.swift */; };
+		0E4B03A620BF023900022AA0 /* MeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0E4B03A420BF023900022AA0 /* MeViewController.xib */; };
+		0E4B03A920BF042D00022AA0 /* OperationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4B03A720BF042D00022AA0 /* OperationViewController.swift */; };
+		0E4B03AA20BF042D00022AA0 /* OperationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0E4B03A820BF042D00022AA0 /* OperationViewController.xib */; };
+		0E6CD29020C056A500470060 /* readRecordsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E6CD28E20C056A500470060 /* readRecordsViewController.swift */; };
+		0E6CD29120C056A500470060 /* readRecordsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0E6CD28F20C056A500470060 /* readRecordsViewController.xib */; };
 		0EC14E3E20BAB13900161698 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EC14E3C20BAB13900161698 /* SearchViewController.swift */; };
 		0EC14E3F20BAB13900161698 /* SearchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0EC14E3D20BAB13900161698 /* SearchViewController.xib */; };
 		0EC14E4220BAFB6700161698 /* NavEditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EC14E4020BAFB6700161698 /* NavEditViewController.swift */; };
@@ -56,6 +62,12 @@
 /* Begin PBXFileReference section */
 		0E06632120BDA6D80087F81F /* NavCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavCell.swift; sourceTree = "<group>"; };
 		0E06632220BDA6D80087F81F /* NavCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NavCell.xib; sourceTree = "<group>"; };
+		0E4B03A320BF023900022AA0 /* MeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeViewController.swift; sourceTree = "<group>"; };
+		0E4B03A420BF023900022AA0 /* MeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MeViewController.xib; sourceTree = "<group>"; };
+		0E4B03A720BF042D00022AA0 /* OperationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OperationViewController.swift; sourceTree = "<group>"; };
+		0E4B03A820BF042D00022AA0 /* OperationViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OperationViewController.xib; sourceTree = "<group>"; };
+		0E6CD28E20C056A500470060 /* readRecordsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = readRecordsViewController.swift; sourceTree = "<group>"; };
+		0E6CD28F20C056A500470060 /* readRecordsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = readRecordsViewController.xib; sourceTree = "<group>"; };
 		0EC14E3C20BAB13900161698 /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		0EC14E3D20BAB13900161698 /* SearchViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SearchViewController.xib; sourceTree = "<group>"; };
 		0EC14E4020BAFB6700161698 /* NavEditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavEditViewController.swift; sourceTree = "<group>"; };
@@ -207,6 +219,12 @@
 				0EDE36F320BC269300B3C27E /* NodeModel.swift */,
 				0E06632120BDA6D80087F81F /* NavCell.swift */,
 				0E06632220BDA6D80087F81F /* NavCell.xib */,
+				0E4B03A320BF023900022AA0 /* MeViewController.swift */,
+				0E4B03A420BF023900022AA0 /* MeViewController.xib */,
+				0E4B03A720BF042D00022AA0 /* OperationViewController.swift */,
+				0E4B03A820BF042D00022AA0 /* OperationViewController.xib */,
+				0E6CD28E20C056A500470060 /* readRecordsViewController.swift */,
+				0E6CD28F20C056A500470060 /* readRecordsViewController.xib */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -337,8 +355,11 @@
 				B2D221D71B0B63A100007E79 /* Images.xcassets in Resources */,
 				B24128AC1B2D3FDC0006AEF9 /* DateTools.bundle in Resources */,
 				0EC14E3F20BAB13900161698 /* SearchViewController.xib in Resources */,
+				0E4B03AA20BF042D00022AA0 /* OperationViewController.xib in Resources */,
 				0EC14E4720BAFD4600161698 /* NodeCell.xib in Resources */,
 				0E06632420BDA6D80087F81F /* NavCell.xib in Resources */,
+				0E6CD29120C056A500470060 /* readRecordsViewController.xib in Resources */,
+				0E4B03A620BF023900022AA0 /* MeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -378,6 +399,7 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-RubyChina/Pods-RubyChina-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
+				"${BUILT_PRODUCTS_DIR}/ActiveSQLite/ActiveSQLite.framework",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/CCBottomRefreshControl/CCBottomRefreshControl.framework",
 				"${BUILT_PRODUCTS_DIR}/DateTools/DateTools.framework",
@@ -386,6 +408,7 @@
 				"${BUILT_PRODUCTS_DIR}/MGSwipeTableCell/MGSwipeTableCell.framework",
 				"${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework",
 				"${BUILT_PRODUCTS_DIR}/RegExCategories/RegExCategories.framework",
+				"${BUILT_PRODUCTS_DIR}/SQLite.swift/SQLite.framework",
 				"${BUILT_PRODUCTS_DIR}/SZTextView/SZTextView.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 				"${BUILT_PRODUCTS_DIR}/TPKeyboardAvoiding/TPKeyboardAvoiding.framework",
@@ -394,6 +417,7 @@
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ActiveSQLite.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CCBottomRefreshControl.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DateTools.framework",
@@ -402,6 +426,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MGSwipeTableCell.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Masonry.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RegExCategories.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SQLite.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SZTextView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TPKeyboardAvoiding.framework",
@@ -450,12 +475,15 @@
 				B2F218031B18B54000150DDF /* ReplyCell.swift in Sources */,
 				0EC14E3E20BAB13900161698 /* SearchViewController.swift in Sources */,
 				B2F218151B18B55600150DDF /* WebViewController.swift in Sources */,
+				0E4B03A920BF042D00022AA0 /* OperationViewController.swift in Sources */,
 				B2F218041B18B54000150DDF /* TopicTitleCell.swift in Sources */,
 				B2FBE70E1D5D8C5700E5DDE8 /* UIViewController.swift in Sources */,
 				B21B37C41E0443AA00DD4FF3 /* JSON.swift in Sources */,
 				B263B52E1B205B0B00C56CB0 /* SplitViewController.swift in Sources */,
+				0E6CD29020C056A500470060 /* readRecordsViewController.swift in Sources */,
 				B22DE0DF1B1951B200888C0D /* ComposeController.swift in Sources */,
 				0E06632320BDA6D80087F81F /* NavCell.swift in Sources */,
+				0E4B03A520BF023900022AA0 /* MeViewController.swift in Sources */,
 				B2F217FB1B18B53600150DDF /* Helper.swift in Sources */,
 				0EDE36F420BC269300B3C27E /* NodeModel.swift in Sources */,
 				B2F218051B18B54000150DDF /* UserNameCell.swift in Sources */,

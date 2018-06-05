@@ -212,6 +212,7 @@ class ComposeController: UIViewController, UITableViewDataSource, UITableViewDel
                 }
             } else {
                 let reply = JSON(responseObject)["reply"]
+                //存储回复
                 self.reply["id"].int == nil ? topicController?.addReply(reply) : topicController?.updateReply(reply)
                 _ = self.navigationController?.popViewController(animated: true)
             }

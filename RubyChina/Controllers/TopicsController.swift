@@ -13,6 +13,7 @@ import TPKeyboardAvoiding
 import UINavigationBar_Addition
 import UIKit
 import Alamofire
+import SQLite
 
 class TopicsController: UIViewController, UISearchBarDelegate, UITableViewDataSource, UITableViewDelegate, UIToolbarDelegate, UICollectionViewDelegate, UICollectionViewDataSource {
 
@@ -250,6 +251,7 @@ class TopicsController: UIViewController, UISearchBarDelegate, UITableViewDataSo
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let topicController = TopicController()
         topicController.topic = topics[indexPath.row]
+        self.saveReadRecord(topic:topics[indexPath.row])
         self.navigationController?.pushViewController(topicController, animated: true)
 //        splitViewController?.showDetailViewController(UINavigationController(rootViewController: topicController), sender: self)
     }
@@ -336,6 +338,21 @@ class TopicsController: UIViewController, UISearchBarDelegate, UITableViewDataSo
         tableView.reloadData()
         _ = navigationController?.popToViewController(self, animated: true)
     }
+    
+    func saveReadRecord(topic:JSON) {
+        let db = try? Connection(NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)[0] + "/db.sqlite3")
+        
+        let readRecords = Table("readRecords")
+        let id = Expression<Int64>("id")
+        let title = Expression<String?>("title")
+        let node_name = Expression<String?>("node_name")
+        let replies_count = Expression<Int64?>("replies_count")
+        let replied_at = Expression<String?>("replied_at")
+        let login = Expression<String?>("login")
+        let insert = readRecords.insert(id <- Int64(topic["id"].intValue),title <- topic["title"].string, node_name <- topic["node_name"].string,replies_count <- Int64(topic["replies_count"].intValue),replied_at <- topic["replied_at"].string,login <- topic["user"]["login"].string)
+        _ = try? db?.run(insert)
+    }
+    
 }
 
 

@@ -163,22 +163,20 @@ class NavEditViewController: UIViewController, UICollectionViewDelegate, UIColle
     
     func deleteNode(node:NodeModel) {
         self.otherNodes.append(node)
-        self.myNodes.remove(at: self.otherNodes.index(of: node)!)
+        if(self.myNodes.contains(node)){
+            self.myNodes.remove(at: self.myNodes.index(of: node)!)
+        }
         self.myNodeCollectionView.reloadData()
         self.otherNodeCollectionView.reloadData()
-//        self.myNodes.removeAll()
-//        self.otherNodes.removeAll()
-//        self.loadData()
     }
     
     func addNode(node:NodeModel) {
         self.myNodes.append(node)
-        self.otherNodes.remove(at: self.otherNodes.index(of: node)!)
+        if(self.otherNodes.contains(node)){
+            self.otherNodes.remove(at: self.otherNodes.index(of: node)!)
+        }
         self.myNodeCollectionView.reloadData()
         self.otherNodeCollectionView.reloadData()
-//        self.myNodes.removeAll()
-//        self.otherNodes.removeAll()
-//        self.loadData()
     }
 
 }
